@@ -1,43 +1,65 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
-import { Platform } from 'react-native';
-
-import { HapticTab } from '@/components/HapticTab';
-import { IconSymbol } from '@/components/ui/IconSymbol';
-import TabBarBackground from '@/components/ui/TabBarBackground';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
+import TabIcon from "@/components/TabIcon";
+import { Tabs } from "expo-router";
+import {
+  HeartIcon,
+  HouseIcon,
+  MessageCircle,
+  UserIcon,
+} from "lucide-react-native";
+export default function TabsLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-        tabBarBackground: TabBarBackground,
-        tabBarStyle: Platform.select({
-          ios: {
-            // Use a transparent background on iOS to show the blur effect
-            position: 'absolute',
-          },
-          default: {},
-        }),
-      }}>
+        tabBarShowLabel: false,
+        tabBarStyle: {
+          backgroundColor: "#ef2a39",
+          height: 80,
+          paddingTop: 20,
+          borderTopWidth: 0,
+          borderTopLeftRadius: 20,
+          borderTopRightRadius: 20,
+        },
+      }}
+    >
       <Tabs.Screen
         name="index"
+        options={({ navigation }) => ({
+          headerShown: false,
+          title: "Home",
+
+          tabBarIcon: ({ focused }) => (
+            <TabIcon icon={<HouseIcon color="white" />} focused={focused} />
+          ),
+        })}
+      />
+      <Tabs.Screen
+        name="profile"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          headerShown: false,
+          title: "Profile",
+          tabBarIcon: ({ focused }) => (
+            <TabIcon icon={<UserIcon color="white" />} focused={focused} />
+          ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="chat"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          headerShown: false,
+          title: "Chat",
+          tabBarIcon: ({ focused }) => (
+            <TabIcon icon={<MessageCircle color="white" />} focused={focused} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="wishlist"
+        options={{
+          headerShown: false,
+          title: "Wishlist",
+          tabBarIcon: ({ focused }) => (
+            <TabIcon icon={<HeartIcon color="white" />} focused={focused} />
+          ),
         }}
       />
     </Tabs>
