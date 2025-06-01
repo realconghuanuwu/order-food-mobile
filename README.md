@@ -1,50 +1,159 @@
-# Welcome to your Expo app 👋
+# Food Order Mobile App 🍔
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Ứng dụng đặt đồ ăn di động
 
-## Get started
+![home](https://github.com/user-attachments/assets/f02cd1e4-a81b-490d-a473-de80fa3ecba7)
 
-1. Install dependencies
+## Overview | Tổng quan
 
-   ```bash
-   npm install
-   ```
+**English:**
+A modern mobile application for ordering food, built with React Native and Expo. This app provides a seamless experience for users to browse restaurants, view menus, and order their favorite dishes directly from their mobile devices.
 
-2. Start the app
+**Tiếng Việt:**
+Ứng dụng di động hiện đại để đặt đồ ăn, được xây dựng bằng React Native và Expo. Ứng dụng này mang đến trải nghiệm mượt mà cho người dùng để duyệt nhà hàng, xem thực đơn và đặt món ăn yêu thích trực tiếp từ thiết bị di động của họ.
 
-   ```bash
-   npx expo start
-   ```
+![image](https://github.com/user-attachments/assets/d42de545-0f21-40d6-b593-96f0c34f7f19)
 
-In the output, you'll find options to open the app in a
+## Features | Tính năng
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+**English:**
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- User-friendly interface
+- Restaurant browsing and search
+- Menu categorization
+- Real-time order tracking
+- Secure payment integration
+- Order history
+- User profile management
 
-## Get a fresh project
+**Tiếng Việt:**
 
-When you're ready, run:
+- Giao diện thân thiện với người dùng
+- Duyệt và tìm kiếm nhà hàng
+- Phân loại thực đơn
+- Theo dõi đơn hàng thời gian thực
+- Tích hợp thanh toán an toàn
+- Lịch sử đơn hàng
+- Quản lý hồ sơ người dùng
+
+## Technology Stack | Công nghệ sử dụng
+
+- React Native
+- Expo
+- Zustand
+- React Navigation
+- TypeScript
+- Firebase
+
+## Installation | Cài đặt
+
+**English:**
+
+1. Clone the repository:
 
 ```bash
-npm run reset-project
+git clone https://github.com/realconghuanuwu/order-food-mobile
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies:
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+3. Start the development server:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+**Tiếng Việt:**
 
-Join our community of developers creating universal apps.
+1. Sao chép kho lưu trữ:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+git clone https://github.com/realconghuanuwu/order-food-mobile
+```
+
+2. Cài đặt các gói phụ thuộc:
+
+```bash
+npm install
+```
+
+3. Khởi động máy chủ phát triển:
+
+```bash
+npx expo start
+```
+
+## Usage | Hướng dẫn sử dụng
+
+**English:**
+After starting the development server, you can:
+
+- Press 'a' to open Android emulator
+- Press 'i' to open iOS simulator
+- Scan QR code with Expo Go app on your physical device
+
+**Tiếng Việt:**
+Sau khi khởi động máy chủ phát triển, bạn có thể:
+
+- Nhấn 'a' để mở giả lập Android
+- Nhấn 'i' để mở giả lập iOS
+- Quét mã QR bằng ứng dụng Expo Go trên thiết bị của bạn
+
+[Usage Demo GIF - Video hướng dẫn sử dụng]
+
+## Project Structure | Cấu trúc dự án
+
+```
+src/
+├── components/     # Reusable components | Components có thể tái sử dụng
+├── screens/        # Screen components | Các màn hình
+├── navigation/     # Navigation configuration | Cấu hình điều hướng
+├── services/       # API services | Các service API
+├── store/         # State management | Quản lý state
+├── utils/         # Utility functions | Các hàm tiện ích
+└── assets/        # Images, fonts, etc. | Hình ảnh, font chữ, v.v.
+```
+
+## Contributing | Đóng góp
+
+**English:**
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+**Tiếng Việt:**
+
+1. Fork kho lưu trữ
+2. Tạo nhánh tính năng của bạn
+3. Commit các thay đổi
+4. Push lên nhánh
+5. Tạo Pull Request
+
+## License | Giấy phép
+
+MIT License | Giấy phép MIT
+
+## Contact | Liên hệ
+
+huanluongcong@gmail.com
+
+---
+
+## Acknowledgments | Lời cảm ơn
+
+**English:**
+
+- Thanks to all contributors
+- Special thanks to the React Native and Expo communities
+
+**Tiếng Việt:**
+
+- Cảm ơn tất cả những người đóng góp
+- Đặc biệt cảm ơn cộng đồng React Native và Expo
